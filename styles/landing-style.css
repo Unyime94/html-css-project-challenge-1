@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: Arial;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 30px 40px; */
+    padding: 1em 2em;
+}
+
+.nav-section .logo-div h2 {
+    font-family: 'Times New Roman';
+    letter-spacing: 3px;
+}
+
+.nav-section .logo-div p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    color: rgb(114, 114, 114);
+}
+
+.nav-section a {
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    font-size: small;
+    transition: transform 0.15s;
+}
+
+.nav-section a:hover {
+    transform: scale(1.1);
+}
+
+.nav-div {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-section .touch {
+    border: 2px solid rgb(112, 112, 112);
+    padding: 0.35em 0.7em;
+    transition: opacity 0.17s;
+}
+
+.nav-section .touch:hover {
+    opacity: 0.7;
+}
+
+.main-section {
+    background-image: url("/images/bg-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section h1 {
+    font-family: Arial;
+    letter-spacing: 0.8rem;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.main-section a {
+    text-decoration: none;
+    font-family: Arial;
+    color: white;
+    border: 1px solid #ffff;
+    padding: 10px 20px;
+    padding: 0.8em 1.6em;
+    margin-top: 3rem;
+    transition: transform 0.2s;
+}
+
+.main-section a:hover {
+    transform: scale(1.1);
+}
+
+.main-section a:active {
+    opacity: 0.6;
+}
+
+@media (max-width: 320px) {
+    body,
+    html {
+        overflow: scroll;
+    }
+    .nav-section {
+        padding: 0.5em 1em;
+        display: flex;
+        gap: 2em;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .nav-section .touch {
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        margin: 0 1em;
+    }
+}
